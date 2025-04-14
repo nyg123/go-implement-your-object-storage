@@ -1,12 +1,13 @@
 package objects
 
 import (
-	"../locate"
 	"fmt"
 	"io"
-	"lib/utils"
 	"net/http"
 	"net/url"
+
+	"objectstorage/chapter4/apiServer/locate"
+	"objectstorage/src/lib/utils"
 )
 
 func storeObject(r io.Reader, hash string, size int64) (int, error) {

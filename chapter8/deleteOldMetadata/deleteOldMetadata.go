@@ -1,8 +1,8 @@
 package main
 
 import (
-	"lib/es"
 	"log"
+	"objectstorage/src/lib/es"
 )
 
 const MIN_VERSION_COUNT = 5

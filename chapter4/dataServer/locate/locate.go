@@ -1,7 +1,7 @@
 package locate
 
 import (
-	"lib/rabbitmq"
+	"objectstorage/src/lib/rabbitmq"
 	"os"
 	"path/filepath"
 	"strconv"

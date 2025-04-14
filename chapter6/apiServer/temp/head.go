@@ -2,10 +2,11 @@ package temp
 
 import (
 	"fmt"
-	"lib/rs"
 	"log"
 	"net/http"
 	"strings"
+
+	"objectstorage/src/lib/rs"
 )
 
 func head(w http.ResponseWriter, r *http.Request) {

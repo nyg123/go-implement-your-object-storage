@@ -1,13 +1,14 @@
 package main
 
 import (
-	"../apiServer/objects"
-	"lib/es"
-	"lib/utils"
 	"log"
 	"os"
 	"path/filepath"
 	"strings"
+
+	"objectstorage/chapter8/apiServer/objects"
+	"objectstorage/src/lib/es"
+	"objectstorage/src/lib/utils"
 )
 
 func main() {

@@ -2,12 +2,13 @@ package objects
 
 import (
 	"io"
-	"lib/es"
 	"log"
 	"net/http"
 	"net/url"
 	"strconv"
 	"strings"
+
+	"objectstorage/src/lib/es"
 )
 
 func get(w http.ResponseWriter, r *http.Request) {

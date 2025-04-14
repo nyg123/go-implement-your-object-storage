@@ -1,11 +1,11 @@
 package objects
 
 import (
-	"lib/es"
-	"lib/utils"
 	"log"
 	"net/http"
 	"net/url"
+	"objectstorage/src/lib/es"
+	"objectstorage/src/lib/utils"
 	"strings"
 )
 

@@ -1,7 +1,6 @@
 package objects
 
 import (
-	"../locate"
 	"crypto/sha256"
 	"encoding/base64"
 	"log"
@@ -9,6 +8,8 @@ import (
 	"os"
 	"path/filepath"
 	"strings"
+
+	"objectstorage/chapter5/dataServer/locate"
 )
 
 func getFile(name string) string {

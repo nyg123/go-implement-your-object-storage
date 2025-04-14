@@ -3,7 +3,7 @@ package rs
 import (
 	"fmt"
 	"io"
-	"lib/objectstream"
+	"objectstorage/src/lib/objectstream"
 )
 
 type RSPutStream struct {
@@ -19,8 +19,10 @@ func NewRSPutStream(dataServers []string, hash string, size int64) (*RSPutStream
 	writers := make([]io.Writer, ALL_SHARDS)
 	var e error
 	for i := range writers {
-		writers[i], e = objectstream.NewTempPutStream(dataServers[i],
-			fmt.Sprintf("%s.%d", hash, i), perShard)
+		writers[i], e = objectstream.NewTempPutStream(
+			dataServers[i],
+			fmt.Sprintf("%s.%d", hash, i), perShard,
+		)
 		if e != nil {
 			return nil, e
 		}

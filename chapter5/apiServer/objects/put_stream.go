@@ -1,9 +1,10 @@
 package objects
 
 import (
-	"../heartbeat"
 	"fmt"
-	"lib/rs"
+
+	"objectstorage/chapter5/apiServer/heartbeat"
+	"objectstorage/src/lib/rs"
 )
 
 func putStream(hash string, size int64) (*rs.RSPutStream, error) {

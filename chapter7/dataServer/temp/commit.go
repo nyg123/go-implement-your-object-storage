@@ -1,11 +1,11 @@
 package temp
 
 import (
-	"../locate"
 	"compress/gzip"
 	"io"
-	"lib/utils"
 	"net/url"
+	"objectstorage/chapter7/dataServer/locate"
+	"objectstorage/src/lib/utils"
 	"os"
 	"strconv"
 	"strings"

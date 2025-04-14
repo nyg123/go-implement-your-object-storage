@@ -1,12 +1,13 @@
 package temp
 
 import (
-	"../locate"
-	"lib/utils"
 	"net/url"
 	"os"
 	"strconv"
 	"strings"
+
+	"objectstorage/chapter5/dataServer/locate"
+	"objectstorage/src/lib/utils"
 )
 
 func (t *tempInfo) hash() string {

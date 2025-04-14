@@ -2,10 +2,10 @@ package objects
 
 import (
 	"io"
-	"lib/es"
 	"log"
 	"net/http"
 	"net/url"
+	"objectstorage/src/lib/es"
 	"strconv"
 	"strings"
 )

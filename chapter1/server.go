@@ -1,9 +1,11 @@
 package main
 
 import (
-	"./objects"
 	"log"
 	"net/http"
+
+	"objectstorage/chapter2/apiServer/objects"
+
 	"os"
 )
 

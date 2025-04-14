@@ -1,9 +1,9 @@
 package main
 
 import (
-	"lib/es"
 	"log"
 	"net/http"
+	"objectstorage/src/lib/es"
 	"os"
 	"path/filepath"
 	"strings"

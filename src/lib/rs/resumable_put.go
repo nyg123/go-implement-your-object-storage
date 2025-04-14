@@ -5,10 +5,10 @@ import (
 	"encoding/json"
 	"fmt"
 	"io"
-	"lib/objectstream"
-	"lib/utils"
 	"log"
 	"net/http"
+	"objectstorage/src/lib/objectstream"
+	"objectstorage/src/lib/utils"
 )
 
 type resumableToken struct {

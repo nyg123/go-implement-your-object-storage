@@ -1,14 +1,15 @@
 package main
 
 import (
-	"./heartbeat"
-	"./locate"
-	"./objects"
-	"./temp"
-	"./versions"
 	"log"
 	"net/http"
 	"os"
+
+	"objectstorage/chapter6/apiServer/heartbeat"
+	"objectstorage/chapter6/apiServer/locate"
+	"objectstorage/chapter6/apiServer/objects"
+	"objectstorage/chapter6/apiServer/temp"
+	"objectstorage/chapter6/apiServer/versions"
 )
 
 func main() {

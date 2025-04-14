@@ -1,15 +1,16 @@
 package temp
 
 import (
-	"../locate"
 	"io"
-	"lib/es"
-	"lib/rs"
-	"lib/utils"
 	"log"
 	"net/http"
 	"net/url"
 	"strings"
+
+	"objectstorage/chapter6/apiServer/locate"
+	"objectstorage/src/lib/es"
+	"objectstorage/src/lib/rs"
+	"objectstorage/src/lib/utils"
 )
 
 func put(w http.ResponseWriter, r *http.Request) {

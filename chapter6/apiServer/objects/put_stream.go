@@ -1,1 +1,17 @@
-../../../chapter5/apiServer/objects/put_stream.go
+package objects
+
+import (
+	"fmt"
+
+	"objectstorage/chapter6/apiServer/heartbeat"
+	"objectstorage/src/lib/rs"
+)
+
+func putStream(hash string, size int64) (*rs.RSPutStream, error) {
+	servers := heartbeat.ChooseRandomDataServers(rs.ALL_SHARDS, nil)
+	if len(servers) != rs.ALL_SHARDS {
+		return nil, fmt.Errorf("cannot find enough dataServer")
+	}
+
+	return rs.NewRSPutStream(servers, hash, size)
+}

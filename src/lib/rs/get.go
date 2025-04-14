@@ -3,7 +3,7 @@ package rs
 import (
 	"fmt"
 	"io"
-	"lib/objectstream"
+	"objectstorage/src/lib/objectstream"
 )
 
 type RSGetStream struct {

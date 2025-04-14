@@ -1,8 +1,9 @@
 package temp
 
 import (
-	"../locate"
 	"os"
+
+	"objectstorage/chapter4/dataServer/locate"
 )
 
 func commitTempObject(datFile string, tempinfo *tempInfo) {

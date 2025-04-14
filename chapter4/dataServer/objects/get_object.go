@@ -1,11 +1,12 @@
 package objects
 
 import (
-	"../locate"
-	"lib/utils"
 	"log"
 	"net/url"
 	"os"
+
+	"objectstorage/chapter4/dataServer/locate"
+	"objectstorage/src/lib/utils"
 )
 
 func getFile(hash string) string {

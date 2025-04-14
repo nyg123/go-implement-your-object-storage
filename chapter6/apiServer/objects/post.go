@@ -1,16 +1,17 @@
 package objects
 
 import (
-	"../heartbeat"
-	"../locate"
-	"lib/es"
-	"lib/rs"
-	"lib/utils"
 	"log"
 	"net/http"
 	"net/url"
 	"strconv"
 	"strings"
+
+	"objectstorage/chapter6/apiServer/heartbeat"
+	"objectstorage/chapter6/apiServer/locate"
+	"objectstorage/src/lib/es"
+	"objectstorage/src/lib/rs"
+	"objectstorage/src/lib/utils"
 )
 
 func post(w http.ResponseWriter, r *http.Request) {
